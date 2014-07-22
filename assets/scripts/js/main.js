@@ -1,9 +1,12 @@
 $(document).ready(function () {
 	$('.flexslider').flexslider({
-		animation: "slide",
+		animation: 'fade',
 		slideshow: false,
+		minItems: 2,
+		maxItems: 2,
+		itemWidth: 454,
 		directionNav: true,
-		controlNav: false,
+		controlNav: true,
 		touch: true
 	});
 });
