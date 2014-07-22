@@ -1,6 +1,5 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0 none;
-    /*font: inherit;*/
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -13,7 +12,6 @@ header {
 	padding: 10px 0 10px 150px;
 }
 h1, h2, h3 {
-	/*font-weight: bold;*/
 	font-family: 'Open Sans', sans-serif;
 }
 h1 {
@@ -54,31 +52,48 @@ h3 {
 	font-style: italic;
 	font-weight: bold;
 }
-#body-text p {
+#body-text p, div.aof p {
 	font-family: Arial, sans-serif;
 	font-size: 0.875em;
 	color: #7d7d7d;
 }
 form {
 	background-color: #33301f;
+	width: 320px;
+	padding: 25px 20px;
 }
 form legend, form label, form button {
 	font-family: 'Francois One', sans-serif;
+	font-weight: ;
 	color: white;
+}
+form legend {
+	font-size: 1.125em;
+	padding-bottom: 25px;
+}
+form label {
+	font-size: 0.7em;
 }
 form p {
 	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 0.625em;
+	color: white;
 }
 form input, select {
 	display: block;
+	margin: 2px 0 13px 0;
+	width: 100%;
+	height: 33px;
+}
+select {
+	-webkit-appearance: menulist-button;
 }
 form button {
-	
 	background-color: #c64e12;
+	font-size: 0.875em;
+	margin-top: 12px;
 }
 footer {
-	/*width: 70%;*/
-	/*padding: 45px 172px 60px 172px;*/
 	padding: 45px 0 60px;
 	font-size: 0.625em;
 	font-family: Arial, sans-serif;
@@ -88,7 +103,6 @@ footer {
 footer p {
 	margin: 0 auto 20px;
 	text-align: center;
-	/*max-width: 875px;*/
 	letter-spacing: 0px;
 	width: 75%;
 }
