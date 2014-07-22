@@ -93,6 +93,9 @@ form button {
 	font-size: 0.875em;
 	margin-top: 12px;
 }
+#area-focus {
+	background-color: #d4d4d4;
+}
 footer {
 	padding: 45px 0 60px;
 	font-size: 0.625em;
