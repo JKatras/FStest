@@ -63,7 +63,7 @@ h3 {
 }
 #body-text p, div.aof p {
 	font-family: Arial, sans-serif;
-	font-size: 0.875em;
+	font-size: 14px;
 	color: #7d7d7d;
 }
 #body-text {
@@ -108,21 +108,38 @@ form button {
 /*#area-focus {
 	padding-bottom: 60px;
 }*/
-#area-focus h2 {
+#aof-head{
+	background: url('../images/divider.png') repeat-x left center;
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+#aof-head h2 {
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 58px;
+	/*margin: 0 auto 58px;*/
+	padding: 0 30px;
+	background-color: #fff;
+	display: inline-block;
 }
+/*hr {
+	width: 85%;
+	height: 2px;
+	color: #ccc;
+	z-index: 0;
+	position: relative;
+	margin: 0 0 -10px;
+}*/
 #area-focus-columns {
 	text-align: center;
-	margin: 0 auto;
-	padding-bottom: 60px;
+	margin: 58px auto 0;
+	padding: 0 5% 60px;
 	background-color: #d4d4d4;
 	display: block;
-	width: 75%;
+	width: 100%;
 }
 .aof {
-	padding: 0 25px;
+	padding: 0 70px;
 	/*width: 25%;*/
 	/*max-width: 243px;*/
 	display: inline-block;
@@ -134,11 +151,11 @@ form button {
 	border-radius: 80px;
 }
 .aof h3 {
-	margin: 0 0 25px;
+	margin: 0 0 10px;
 }
 .aof p {
 	text-align: left;
-	line-height: 1.4em;
+	line-height: 21.875px;
 }
 #online-exp {
 	background-color: #b1b1b1;
@@ -161,23 +178,25 @@ footer {
 	color: #767676;
 	text-align: center;
 }
+footer p:first-child {
+	letter-spacing: 0.06em;
+}
+/*footer p:last-child {
+	margin-bottom: 15px;
+}*/
+footer p:nth-child(n+3):nth-child(-n+5) {
+	margin: 0 auto;
+}
+footer p:nth-child(6) {
+	margin-bottom: 15px;
+}
 footer p {
 	margin: 0 auto 20px;
 	text-align: center;
 	letter-spacing: 0px;
 	width: 75%;
 }
-footer p:first-child {
-	letter-spacing: 0.06em;
-}
-footer p:last-child {
-	margin-bottom: 15px;
-}
-footer p:nth-child(n+3):nth-child(-n+5) {
-	margin: 0 auto;
-}
 footer a {
 	text-decoration: underline;
 	color: #f16020;
-	margin-top: 20px;
 }
