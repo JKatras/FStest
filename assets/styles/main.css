@@ -11,9 +11,12 @@ header, footer {
 header {
 	padding: 10px 0 10px 150px;
 }
-/*section {
-	display: inline-block;
-}*/
+.container-fluid {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -116,11 +119,12 @@ form button {
 	padding-bottom: 60px;
 	background-color: #d4d4d4;
 	display: block;
+	width: 75%;
 }
 .aof {
 	padding: 0 25px;
-	width: 25%;
-	max-width: 243px;
+	/*width: 25%;*/
+	/*max-width: 243px;*/
 	display: inline-block;
 }
 .aof img {
