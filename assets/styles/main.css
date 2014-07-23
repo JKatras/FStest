@@ -11,9 +11,9 @@ header, footer {
 header {
 	padding: 10px 0 10px 150px;
 }
-section {
+/*section {
 	display: inline-block;
-}
+}*/
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -63,6 +63,9 @@ h3 {
 	font-size: 0.875em;
 	color: #7d7d7d;
 }
+#body-text {
+	margin-bottom: 52px;
+}
 form {
 	background-color: #33301f;
 	width: 320px;
@@ -99,8 +102,39 @@ form button {
 	font-size: 0.875em;
 	margin-top: 12px;
 }
-#area-focus {
+/*#area-focus {
+	padding-bottom: 60px;
+}*/
+#area-focus h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 58px;
+}
+#area-focus-columns {
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 60px;
 	background-color: #d4d4d4;
+	display: block;
+}
+.aof {
+	padding: 0 25px;
+	width: 25%;
+	max-width: 243px;
+	display: inline-block;
+}
+.aof img {
+	margin-top: -30px;
+	padding: 17px;
+	background-color: #d4d4d4;
+	border-radius: 80px;
+}
+.aof h3 {
+	margin: 0 0 25px;
+}
+.aof p {
+	text-align: left;
+	line-height: 1.4em;
 }
 #online-exp {
 	background-color: #b1b1b1;
@@ -108,6 +142,13 @@ form button {
 .flexslider {
 	width: 75%;
 	margin: 0 auto;
+}
+.flex-viewport {
+	overflow: hidden;
+	position: relative;
+}
+.slides {
+	width: 454px;
 }
 footer {
 	padding: 45px 0 60px;
