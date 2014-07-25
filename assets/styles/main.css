@@ -315,6 +315,9 @@ footer a {
 	}
 }
 @media all and (max-width: 750px) {
+	header {
+		padding-left: 15px;
+	}
 	#main {
 		width: 100%;
 	}
