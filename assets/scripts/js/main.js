@@ -5,9 +5,11 @@ $(document).ready(function() {
 		touch: true,
 		controlNav: true,
 		directionNav: true,
+		prevText: "",
+		nextText: "",
 		itemWidth: 454,
-		minItems: 2,
-		maxItems: 2
-		
+		minItems: 1,
+		maxItems: 2	
 	});
+	
 });

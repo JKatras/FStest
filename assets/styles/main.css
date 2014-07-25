@@ -15,6 +15,7 @@ header {
 	padding: 10px 0 10px 150px;
 }
 .container-fluid {
+	position: relative;
 	max-width: 1220px;
 	margin-right: auto;
 	margin-left: auto;
@@ -88,11 +89,11 @@ h3 {
 #main h1 {
 	max-width: 38%;
 	line-height: 1.2;
-	margin-bottom: 15px;
+	margin: 35px 0 15px;
 }
 #body-text {
 	padding: 0;
-	max-width: 58%;
+	max-width: 57%;
 }
 #body-text p {
 	margin-bottom: 15px;
@@ -103,16 +104,18 @@ form {
 	padding: 25px 20px;
 	position: absolute;
 	top: 80px;
-	left: 60%;
+	right: 10%;
 }
-form legend, form label, form button {
+form h5, form label, form button {
 	font-family: 'Francois One', sans-serif;
-	font-weight: ;
+	
 	color: white;
 }
-form legend {
+form h5 {
+	line-height: 1;
 	font-size: 1.125em;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
+	font-weight: lighter;
 }
 form label {
 	font-size: 0.7em;
@@ -124,19 +127,25 @@ form p {
 }
 form input, select {
 	display: block;
-	margin: 2px 0 13px 0;
+	margin: 2px 0 6px 0;
 	width: 100%;
 	height: 33px;
 }
 select {
 	-webkit-appearance: menulist-button;
+	border-radius: 0;
 }
 form button {
+	width: 100%;
+	text-transform: uppercase;
 	background-color: #c64e12;
 	font-size: 0.875em;
-	margin-top: 12px;
+	margin: 12px 0 25px;
+	padding: 8px;
+	border: none;
+	line-height: 1.333333;
 }
-#aof-head{
+#aof-head {
 	background: url('../images/divider.png') repeat-x left center;
 	width: 75%;
 	margin: 0 auto;
@@ -198,13 +207,36 @@ form button {
 	border: none;
 	box-shadow: none;
 }
+.flexslider .slides > li > div {
+	width: 90%;
+}
 .flex-direction-nav a {
 	opacity: 1.0;
+	height: 72px;
+	width: 30px;
+	margin-top: -40px;
+	/*color: #fff;*/
 }
-.flex-direction-nav .flex-prev { left: -30px; }
-.flex-direction-nav .flex-next { right: -30px; text-align: right; }
-.flexslider:hover .flex-prev { opacity: 1.0; }
-.flexslider:hover .flex-next { opacity: 1.0; }
+.flex-direction-nav a:before {
+	visibility: hidden;
+}
+.flex-direction-nav .flex-prev {
+	background: url(../images/prev.png); 
+	left: -30px; 
+}
+.flex-direction-nav .flex-next { 
+	background: url(../images/next.png);
+	/*right: -30px; */
+	text-align: right; 
+}
+.flexslider:hover .flex-prev { 
+	opacity: 1.0;
+	/*left: 0; */
+}
+.flexslider:hover .flex-next { 
+	opacity: 1.0;
+	/*right: 0; */
+}
 .flex-control-nav {
 	bottom: -30px;
 }
@@ -220,6 +252,19 @@ form button {
 
 .flex-control-paging li a.flex-active {
 	background: #595959;
+}
+#online-exp h2 {
+	line-height: 1.25;
+}
+#online-exp h3 {
+	color: #fff;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	line-height: 2.389;
+}
+#online-exp p {
+	color: #595959;
+	line-height: 2em;
 }
 footer {
 	padding: 45px 0 60px;
@@ -247,4 +292,79 @@ footer p {
 footer a {
 	text-decoration: underline;
 	color: #f16020;
+}
+@media all and (max-width: 920px) {
+	#feature-caption {
+		bottom: 15px;
+		left: 15px;
+		padding: 10px 15px;
+	}
+	#area-focus-columns {
+		width: 100%;
+	}
+	#online-exp {
+		padding: 20px 35px;
+	}
+	form {
+		position: relative;
+		width: 100%;
+		padding: 20px 10% 0;
+		top: 0;
+		left: 0;
+	}
+	form h5, form button {
+		text-align: center;
+	}
+	form button {
+		float: none;
+		width: 25%;
+		margin: 20px 40%;
+	}
+	#main h1, #body-text {
+		width: 100%;
+		max-width: none;
+	}
+}
+@media all and (max-width: 750px) {
+	#main {
+		width: 100%;
+	}
+	#aof-head {
+		width: 100%;
+	}
+	#aof-wrap {
+		margin-top: 20px;
+	}
+	#area-focus-columns {
+		padding-top: 20px;
+	}
+	.aof {
+		display: block;
+		width: 100%;
+	}
+	.aof img, .aof h3 {
+		margin: 0px;
+	}
+	.aof img {
+		float: left;
+	}
+	.aof h3 {
+		text-align: left;
+	}
+	#main h1, #body-text {
+		margin: 15px;
+	}
+	.flexslider .slides li:nth-child(odd) {
+		/*visibility: hidden;*/
+	}
+	.flexslider .slides li:nth-child(even) > div{
+		text-align: center;
+		/*margin-left: -150px;*/
+	}
+	.flex-direction-nav .flex-prev {
+		left: -50px;
+	}
+	.flex-direction-nav .flex-next {
+		right: -50px;
+	}
 }
