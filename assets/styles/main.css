@@ -188,12 +188,15 @@ form button {
 	text-align: left;
 	line-height: 21.875px;
 }
-#online-exp {
+#online-exp, .flexslider {
 	background-color: #b1b1b1;
 }
 .flexslider {
 	width: 75%;
 	margin: 0 auto;
+	border: none;
+	/*border-radius: 0;*/
+	box-shadow: none;
 }
 /*.flex-viewport {
 	overflow: hidden;
