@@ -12,7 +12,7 @@ header, footer {
 	display: block;
 }
 header {
-	padding: 10px 0 10px 150px;
+	padding: 10px 0 10px 15%;
 }
 .container-fluid {
 	position: relative;
@@ -48,13 +48,9 @@ h3 {
 }
 #feature {
 	background: #fff url('../images/feature_img.jpg') no-repeat left top;
-	/*margin-bottom: 52px;*/
 	background-size: 100% auto;
 	display: block;
 	padding-top: 32.78688%;
-	/*width: 100%;*/
-	/*height: 400px;*/
-	/*position: relative;*/
 }
 #feature-caption {
 	position: absolute;
@@ -154,7 +150,6 @@ form button {
 #aof-head h2 {
 	text-transform: uppercase;
 	text-align: center;
-	/*margin: 0 auto 58px;*/
 	padding: 0 30px;
 	background-color: #fff;
 	display: inline-block;
@@ -168,8 +163,6 @@ form button {
 }
 #area-focus-columns {
 	text-align: center;
-	/*margin: 58px auto 0;*/
-	/*padding: 0 5% 60px;*/
 	background-color: #d4d4d4;
 	display: inline-block;
 	width: 75%;
@@ -215,7 +208,6 @@ form button {
 	height: 72px;
 	width: 30px;
 	margin-top: -40px;
-	/*color: #fff;*/
 }
 .flex-direction-nav a:before {
 	visibility: hidden;
@@ -226,16 +218,13 @@ form button {
 }
 .flex-direction-nav .flex-next { 
 	background: url(../images/next.png);
-	/*right: -30px; */
 	text-align: right; 
 }
 .flexslider:hover .flex-prev { 
 	opacity: 1.0;
-	/*left: 0; */
 }
 .flexslider:hover .flex-next { 
 	opacity: 1.0;
-	/*right: 0; */
 }
 .flex-control-nav {
 	bottom: -30px;
@@ -354,12 +343,8 @@ footer a {
 	#main h1, #body-text {
 		margin: 15px;
 	}
-	.flexslider .slides li:nth-child(odd) {
-		/*visibility: hidden;*/
-	}
 	.flexslider .slides li:nth-child(even) > div{
 		text-align: center;
-		/*margin-left: -150px;*/
 	}
 	.flex-direction-nav .flex-prev {
 		left: -50px;
