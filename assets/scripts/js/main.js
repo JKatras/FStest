@@ -1,12 +1,13 @@
-$(window).load(function() {
+$(document).ready(function() {
 	$('.flexslider').flexslider({
-		animation: "fade",
+		animation: "slide",
 		slideshow: false,
-		minItems: 2,
-		maxItems: 2,
-//		itemWidth: 454,
-		directionNav: true,
+		touch: true,
 		controlNav: true,
-		touch: true
+		directionNav: true,
+		itemWidth: 454,
+		minItems: 2,
+		maxItems: 2
+		
 	});
 });
